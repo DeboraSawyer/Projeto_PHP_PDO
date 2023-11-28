@@ -17,7 +17,7 @@ class ConnectionFactory
     {
         try {
 
-            // Instrig de conexão atribuida a variável $pdo.
+            // String de conexão atribuida a variável $pdo.
             //$pdo = new \PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $password);
 
             self::$pdo = new \PDO("mysql:host" . self::$dbhost . ";dbname=" . self::$dbname, self::$dbuser, self::$password);
